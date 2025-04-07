@@ -1,8 +1,8 @@
-#ifndef MyButton_H
-#define MyButton_H
+#ifndef MyButtonIO_H
+#define MyButtonIO_H
 
 /*
-  MyButton.h - A small and simple Arduino library to handle physical buttons
+  MyButtonIO.h - A small and simple Arduino library to handle physical buttons
   Created by Hanzeel Villa, April 6, 2025.
   Released into the public domain.
 
@@ -10,12 +10,12 @@
 
 #include <Arduino.h>
 
-class MyButton {
+class MyButtonIO {
   private:
     int pin;
 
   public:
-    MyButton(int _pin);
+    MyButtonIO(int _pin);
     void init();
     bool isPressed();
 };

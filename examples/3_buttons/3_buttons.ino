@@ -1,12 +1,12 @@
-#include "MyButton.h"
+#include "MyButtonIO.h"
 
 #define PIN_BTN_A 13
 #define PIN_BTN_B 14
 #define PIN_BTN_RST 15
 
-MyButton btnA(PIN_BTN_A);
-MyButton btnB(PIN_BTN_B);
-MyButton btnRst(PIN_BTN_RST);
+MyButtonIO btnA(PIN_BTN_A);
+MyButtonIO btnB(PIN_BTN_B);
+MyButtonIO btnRst(PIN_BTN_RST);
 
 void setup() {
   Serial.begin(115200);
